@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#2d2d2d" />
+  
+  <!-- Task Manager App Illustration -->
+  <g transform="translate(100, 50)">
+    <!-- App Window -->
+    <rect x="0" y="0" width="400" height="300" rx="8" fill="#1e1e1e" />
+    
+    <!-- App Header -->
+    <rect x="0" y="0" width="400" height="40" rx="8 8 0 0" fill="#333" />
+    <text x="20" y="25" font-family="Arial" font-size="14" fill="#fff" font-weight="bold">Task Manager</text>
+    <circle cx="370" cy="20" r="8" fill="#6c63ff" />
+    <path d="M370 16 L370 24 M366 20 L374 20" stroke="#fff" stroke-width="2" />
+    
+    <!-- Sidebar -->
+    <rect x="0" y="40" width="100" height="260" fill="#252525" />
+    
+    <!-- Sidebar Menu Items -->
+    <rect x="15" y="60" width="70" height="30" rx="4" fill="#6c63ff" />
+    <text x="30" y="80" font-family="Arial" font-size="12" fill="#fff">Tasks</text>
+    
+    <rect x="15" y="100" width="70" height="30" rx="4" fill="#333" />
+    <text x="30" y="120" font-family="Arial" font-size="12" fill="#fff">Projects</text>
+    
+    <rect x="15" y="140" width="70" height="30" rx="4" fill="#333" />
+    <text x="30" y="160" font-family="Arial" font-size="12" fill="#fff">Calendar</text>
+    
+    <rect x="15" y="180" width="70" height="30" rx="4" fill="#333" />
+    <text x="30" y="200" font-family="Arial" font-size="12" fill="#fff">Reports</text>
+    
+    <!-- Main Content -->
+    <g transform="translate(120, 60)">
+      <!-- Task Columns -->
+      <g>
+        <!-- To Do Column -->
+        <rect x="0" y="0" width="80" height="220" rx="4" fill="#333" />
+        <rect x="0" y="0" width="80" height="30" rx="4 4 0 0" fill="#444" />
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="#fff">To Do</text>
+        
+        <!-- Task Cards -->
+        <rect x="5" y="40" width="70" height="50" rx="4" fill="#252525" />
+        <rect x="10" y="50" width="40" height="8" rx="2" fill="#6c63ff" />
+        <rect x="10" y="65" width="60" height="4" rx="2" fill="#555" />
+        <rect x="10" y="75" width="50" height="4" rx="2" fill="#555" />
+        
+        <rect x="5" y="100" width="70" height="50" rx="4" fill="#252525" />
+        <rect x="10" y="110" width="50" height="8" rx="2" fill="#ff6584" />
+        <rect x="10" y="125" width="60" height="4" rx="2" fill="#555" />
+        <rect x="10" y="135" width="50" height="4" rx="2" fill="#555" />
+      </g>
+      
+      <g transform="translate(90, 0)">
+        <!-- In Progress Column -->
+        <rect x="0" y="0" width="80" height="220" rx="4" fill="#333" />
+        <rect x="0" y="0" width="80" height="30" rx="4 4 0 0" fill="#444" />
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="#fff">In Progress</text>
+        
+        <!-- Task Cards -->
+        <rect x="5" y="40" width="70" height="50" rx="4" fill="#252525" />
+        <rect x="10" y="50" width="45" height="8" rx="2" fill="#ffca28" />
+        <rect x="10" y="65" width="60" height="4" rx="2" fill="#555" />
+        <rect x="10" y="75" width="50" height="4" rx="2" fill="#555" />
+      </g>
+      
+      <g transform="translate(180, 0)">
+        <!-- Done Column -->
+        <rect x="0" y="0" width="80" height="220" rx="4" fill="#333" />
+        <rect x="0" y="0" width="80" height="30" rx="4 4 0 0" fill="#444" />
+        <text x="10" y="20" font-family="Arial" font-size="12" fill="#fff">Done</text>
+        
+        <!-- Task Cards -->
+        <rect x="5" y="40" width="70" height="50" rx="4" fill="#252525" />
+        <rect x="10" y="50" width="35" height="8" rx="2" fill="#4caf50" />
+        <rect x="10" y="65" width="60" height="4" rx="2" fill="#555" />
+        <rect x="10" y="75" width="50" height="4" rx="2" fill="#555" />
+        
+        <rect x="5" y="100" width="70" height="50" rx="4" fill="#252525" />
+        <rect x="10" y="110" width="55" height="8" rx="2" fill="#4caf50" />
+        <rect x="10" y="125" width="60" height="4" rx="2" fill="#555" />
+        <rect x="10" y="135" width="50" height="4" rx="2" fill="#555" />
+      </g>
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="20" fill="#6c63ff" opacity="0.3" />
+  <circle cx="550" cy="350" r="25" fill="#ff6584" opacity="0.3" />
+  <rect x="500" y="80" width="40" height="40" rx="8" fill="#ffca28" opacity="0.3" />
+  <rect x="60" y="320" width="30" height="30" rx="6" fill="#6c63ff" opacity="0.3" />
+</svg>

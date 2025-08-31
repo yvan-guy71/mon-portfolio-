@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#2d2d2d" />
+  
+  <!-- Blog Website Illustration -->
+  <g transform="translate(100, 50)">
+    <!-- Browser Window -->
+    <rect x="0" y="0" width="400" height="300" rx="8" fill="#1e1e1e" />
+    
+    <!-- Browser Header -->
+    <rect x="0" y="0" width="400" height="30" rx="8 8 0 0" fill="#333" />
+    <circle cx="20" cy="15" r="5" fill="#ff6584" />
+    <circle cx="40" cy="15" r="5" fill="#ffca28" />
+    <circle cx="60" cy="15" r="5" fill="#6c63ff" />
+    <rect x="80" y="10" width="250" height="10" rx="5" fill="#444" />
+    
+    <!-- Blog Content -->
+    <rect x="20" y="50" width="360" height="230" rx="4" fill="#121212" />
+    
+    <!-- Blog Header -->
+    <rect x="20" y="50" width="360" height="60" rx="4 4 0 0" fill="#333" />
+    <text x="40" y="85" font-family="Arial" font-size="18" fill="#fff" font-weight="bold">My Blog</text>
+    
+    <!-- Navigation -->
+    <rect x="200" y="70" width="160" height="20" rx="10" fill="#252525" />
+    <text x="220" y="85" font-family="Arial" font-size="12" fill="#fff">Home</text>
+    <text x="270" y="85" font-family="Arial" font-size="12" fill="#fff">Articles</text>
+    <text x="330" y="85" font-family="Arial" font-size="12" fill="#fff">About</text>
+    
+    <!-- Dark Mode Toggle -->
+    <circle cx="360" cy="85" r="10" fill="#6c63ff" />
+    <path d="M360 80 A 5 5 0 1 0 360 90 A 5 5 0 1 0 360 80 Z" fill="#252525" transform="translate(-3, 0)" />
+    
+    <!-- Blog Posts -->
+    <g>
+      <!-- Featured Post -->
+      <rect x="40" y="130" width="320" height="60" rx="4" fill="#252525" />
+      <rect x="50" y="140" width="100" height="40" rx="4" fill="#6c63ff" opacity="0.7" />
+      <rect x="160" y="140" width="120" height="10" rx="2" fill="#fff" />
+      <rect x="160" y="155" width="180" height="5" rx="2" fill="#555" />
+      <rect x="160" y="165" width="160" height="5" rx="2" fill="#555" />
+      <rect x="160" y="175" width="40" height="5" rx="2" fill="#6c63ff" />
+      
+      <!-- Post 2 -->
+      <rect x="40" y="200" width="150" height="60" rx="4" fill="#252525" />
+      <rect x="50" y="210" width="40" height="40" rx="4" fill="#ff6584" opacity="0.7" />
+      <rect x="100" y="210" width="80" height="8" rx="2" fill="#fff" />
+      <rect x="100" y="223" width="90" height="4" rx="2" fill="#555" />
+      <rect x="100" y="232" width="80" height="4" rx="2" fill="#555" />
+      <rect x="100" y="242" width="30" height="4" rx="2" fill="#ff6584" />
+      
+      <!-- Post 3 -->
+      <rect x="210" y="200" width="150" height="60" rx="4" fill="#252525" />
+      <rect x="220" y="210" width="40" height="40" rx="4" fill="#ffca28" opacity="0.7" />
+      <rect x="270" y="210" width="80" height="8" rx="2" fill="#fff" />
+      <rect x="270" y="223" width="90" height="4" rx="2" fill="#555" />
+      <rect x="270" y="232" width="80" height="4" rx="2" fill="#555" />
+      <rect x="270" y="242" width="30" height="4" rx="2" fill="#ffca28" />
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="20" fill="#6c63ff" opacity="0.3" />
+  <circle cx="550" cy="350" r="25" fill="#ff6584" opacity="0.3" />
+  <rect x="500" y="80" width="40" height="40" rx="8" fill="#ffca28" opacity="0.3" />
+  <rect x="60" y="320" width="30" height="30" rx="6" fill="#6c63ff" opacity="0.3" />
+</svg>

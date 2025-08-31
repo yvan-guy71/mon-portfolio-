@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="content">
+                <div class="text-content">
+                    <h1 class="animate-text">Salut, Je suis Yvan <span class="highlight"></span></h1>
+                    <h2 class="animate-text delay-1">Devéloppeur Web et Programmeur en Apprentissage</h2>
+                    <p class="animate-text delay-2">Je crée des sites web fonctionnelles avec des reponsives agreables qui vous donnera envis d'une collaboration future.</p>
+                    <div class="buttons animate-text delay-3">
+                        <a href="#projects" class="btn primary-btn">Voir mes projets</a>
+                        <a href="#contact" class="btn secondary-btn">Contactez-moi</a>
+                    </div>
+                    <div class="social-icons animate-text delay-4">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="image-content">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="images/profile.jpg" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <h2>À propos de moi</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="image-content">
+                    <div class="about-image-container">
+                        <div class="about-image">
+                            <img src="images/about.svg" alt="About Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-content">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je suis un développeur web passionné avec un fort intérêt pour la création d'expériences utilisateur intuitives et engageantes. Avec une expertise en HTML, CSS et JavaScript, je construis des sites web responsifs qui sont beaux sur tous les appareils.</p>
+                    
+                    <h3>Mes compétences</h3>
+                    <div class="skills">
+                        <div class="skill">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Formation & Expérience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Développeur Web</h4>
+                                <h5>Nom de l'entreprise | 2020 - Présent</h5>
+                                <p>Développement de sites web et d'applications web responsifs utilisant des technologies modernes.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Licence en Informatique</h4>
+                                <h5>Nom de l'université | 2016 - 2020</h5>
+                                <p>Études en informatique avec une spécialisation en développement web et design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-header">
+                <h2>Mes Projets</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="app">Application</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/project1.svg" alt="E-commerce Website Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Un site e-commerce entièrement responsive avec fonctionnalité de panier d'achat.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Voir</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="images/project2.svg" alt="Portfolio Design Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Design de Portfolio</h3>
+                        <p>Un design de portfolio moderne avec thème sombre et animations.</p>
+                        <div class="project-tags">
+                            <span>Figma</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="images/project3.svg" alt="Task Manager App Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Application de Gestion de Tâches</h3>
+                        <p>Une application de gestion de tâches avec fonctionnalité glisser-déposer.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/project4.svg" alt="Blog Website Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site de Blog</h3>
+                        <p>Un site de blog responsive avec bascule de mode sombre.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <h2>Contactez-moi</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content">
+                <div class="contact-info">
+                    <h3>Entrer en contact</h3>
+                    <p>N'hésitez pas à me contacter pour tout travail ou suggestion.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>armellesage66@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+228 99 14 06 16</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lomé,Togo</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Votre Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Yvan. Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#home">Accueil</a>
+                    <a href="#about">À propos</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
