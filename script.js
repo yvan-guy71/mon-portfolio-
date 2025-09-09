@@ -158,25 +158,45 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form submission
     const contactForm = document.getElementById('contactForm');
+    const flashMessage = document.getElementById('flash-message');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Simple form validation
-            if (name && email && subject && message) {
-                // In a real application, you would send this data to a server
-                // For now, we'll just show an alert
-                alert('Thank you for your message! I will get back to you soon.');
-                contactForm.reset();
-            } else {
-                alert('Please fill in all fields.');
-            }
+
+            const formData = new FormData(contactForm);
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    flashMessage.textContent = "Merci pour votre message ! Je vous répondrai rapidement.";
+                    flashMessage.style.display = "block";
+                    flashMessage.classList.add('success');
+                    contactForm.reset();
+                } else {
+                    flashMessage.textContent = "Une erreur est survenue. Veuillez réessayer.";
+                    flashMessage.style.display = "block";
+                    flashMessage.classList.add('error');
+                }
+                setTimeout(() => {
+                    flashMessage.style.display = "none";
+                    flashMessage.classList.remove('success', 'error');
+                }, 5000);
+            })
+            .catch(() => {
+                flashMessage.textContent = "Une erreur est survenue. Veuillez réessayer.";
+                flashMessage.style.display = "block";
+                flashMessage.classList.add('error');
+                setTimeout(() => {
+                    flashMessage.style.display = "none";
+                    flashMessage.classList.remove('success', 'error');
+                }, 5000);
+            });
         });
     }
 
